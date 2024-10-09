@@ -1,21 +1,23 @@
-# Clone do Twitter (X)
+# 🐦 Clone do Twitter (X)
 
-Este projeto é um clone do Twitter (atualmente chamado X), desenvolvido para fins educacionais. Ele simula funcionalidades essenciais da plataforma original, como criação de tweets, curtidas, gestão de usuários, feed de notícias, busca de tweets, entre outros.
+Este projeto é um **Clone do Twitter (atualmente chamado de X)**, criado com o objetivo de replicar algumas das funcionalidades principais da plataforma original, como a criação de tweets, curtidas, seguidores, feed de notícias, busca de tweets, e muito mais. 🚀
 
-## Tecnologias Utilizadas
+## 🛠️ Tecnologias Utilizadas
 
-- **Node.js**: Ambiente de execução do JavaScript no backend.
-- **Express.js**: Framework web minimalista para Node.js.
-- **TypeScript**: Superset do JavaScript que adiciona tipos estáticos.
-- **Prisma**: ORM para manipulação de banco de dados.
-- **JWT (JsonWebToken)**: Para autenticação e autorização via token.
-- **Helmet**: Melhora a segurança da aplicação Express.
-- **Bcrypt-ts**: Biblioteca para hash de senhas.
-- **Zod**: Validação de esquemas e dados.
+As principais tecnologias e ferramentas usadas no desenvolvimento deste projeto são:
 
-## Instalação
+- ⚡ **Node.js**: Ambiente de execução do JavaScript no backend.
+- 🌐 **Express.js**: Framework web minimalista para Node.js.
+- 📜 **TypeScript**: Superset de JavaScript que adiciona tipos estáticos.
+- 🗃️ **Prisma**: ORM para interação com o banco de dados.
+- 🔐 **JWT (JsonWebToken)**: Para autenticação e autorização de usuários via tokens.
+- 🛡️ **Helmet**: Proteger a aplicação com cabeçalhos de segurança.
+- 🔑 **Bcrypt-ts**: Para criptografar senhas de forma segura.
+- 🧪 **Zod**: Validação de esquemas e tipos de dados.
 
-Siga as etapas abaixo para executar o projeto localmente:
+## ⚙️ Como Rodar o Projeto
+
+Siga os passos abaixo para executar o projeto localmente:
 
 1. Clone o repositório:
 
@@ -23,7 +25,7 @@ Siga as etapas abaixo para executar o projeto localmente:
     git clone https://github.com/seu-usuario/clonedotwitter.git
     ```
 
-2. Entre no diretório do projeto:
+2. Acesse o diretório do projeto:
 
     ```bash
     cd clonedotwitter
@@ -43,53 +45,55 @@ Siga as etapas abaixo para executar o projeto localmente:
     npm run dev
     ```
 
-## Funcionalidades
+## 🚀 Funcionalidades
 
-- **Autenticação de Usuários**: Cadastro e login com JWT.
-- **Tweets**: Criar, visualizar e curtir tweets.
-- **Usuários**: Gerenciar perfil de usuários, seguir/desseguir usuários.
-- **Feed**: Exibir tweets dos usuários seguidos.
-- **Tendências**: Ver os tópicos mais comentados.
-- **Sugestões de Usuários**: Sugestões de perfis para seguir.
+- 📝 **Autenticação de Usuários**: Crie uma conta e faça login usando JWT.
+- 🐦 **Tweets**: Poste, visualize e curta tweets.
+- 👤 **Gestão de Usuários**: Veja perfis de usuários, siga e deixe de seguir outros usuários.
+- 📰 **Feed de Notícias**: Veja tweets dos usuários que você segue.
+- 📈 **Trending Topics**: Descubra os tópicos mais comentados.
+- 🔍 **Busca**: Encontre tweets e perfis de usuários.
+- 💡 **Sugestões de Seguimento**: Receba sugestões de perfis interessantes para seguir.
 
-## Endpoints da API
+## 📑 Endpoints da API
 
-### Autenticação
+### 🔐 Autenticação
 
 - `POST /auth/signup` - Cadastro de novo usuário.
-- `POST /auth/signin` - Login do usuário.
+- `POST /auth/signin` - Login de usuário existente.
 
-### Tweets
+### 🐦 Tweets
 
 - `POST /tweet` - Criar novo tweet (autenticado).
 - `GET /tweet/:id` - Obter detalhes de um tweet específico.
 - `GET /tweet/:id/answers` - Obter respostas de um tweet.
 - `POST /tweet/:id/like` - Curtir ou remover curtida de um tweet.
 
-### Usuários
+### 👤 Usuários
 
 - `GET /user/:slug` - Obter informações de um usuário específico.
-- `GET /user/:slug/tweets` - Obter tweets de um usuário.
+- `GET /user/:slug/tweets` - Obter os tweets de um usuário.
 - `POST /user/:slug/follow` - Seguir ou deixar de seguir um usuário.
-- `PUT /user` - Atualizar perfil do usuário.
+- `PUT /user` - Atualizar o perfil do usuário.
 
-### Sistema
+### 📲 Sistema
 
-- `GET /feed` - Obter feed de tweets.
-- `GET /search` - Buscar tweets.
-- `GET /trending` - Obter tópicos em alta.
-- `GET /suggestions` - Obter sugestões de usuários para seguir.
+- `GET /feed` - Obter o feed de tweets dos usuários seguidos.
+- `GET /search` - Buscar tweets e perfis.
+- `GET /trending` - Obter os tópicos mais comentados.
+- `GET /suggestions` - Receber sugestões de perfis para seguir.
 
-## Licença
+## 📄 Licença
 
-Este projeto está sob a licença ISC. Consulte o arquivo `LICENSE` para mais detalhes.
+Este projeto está licenciado sob a licença ISC. Consulte o arquivo `LICENSE` para mais detalhes.
 
-## Contribuições
+## 🤝 Contribuições
 
-Contribuições são bem-vindas! Sinta-se à vontade para abrir issues e enviar pull requests.
+Contribuições são sempre bem-vindas! Sinta-se à vontade para abrir **issues** e enviar **pull requests** com melhorias, correções de bugs ou novas funcionalidades. Vamos juntos melhorar este projeto! 💡
 
 ---
 
-### Exemplo de comando para rodar o servidor:
+💻 **Rodando o servidor em modo de desenvolvimento:**
+
 ```bash
 npm run dev
